@@ -7,6 +7,12 @@
     window.location.href = "https://yavc.adj.st/doctor/id/" + id
   }
 
+  function generateDoctorListDeeplink() {
+    var specialityId = document.getElementById("specialityId_field").value
+    var cityId = document.getElementById("cityId_field").value
+    window.location.href = "https://yavc.adj.st/doctorList/specialityId/" + specialityId + "/cityId/" + cityId
+  }
+
 </script>
 <body>
     <h1 style="font-size:10vw;"> Тестовый домен </h1>
@@ -30,7 +36,13 @@
     <p style="font-size:5vw;"> <a href="https://yavc.adj.st/doctorList/specialityId/77/cityId/1">Лор, Москва</a>
     <hr>
     <form>
-      <input width="20vw" type="number" id="doctorId_field" />
-      <input width="20vw" type="button" value="Показать врача в МП" onclick="generateDoctorDeeplink()" />
+      <input width="5vw" type="number" id="doctorId_field" />
+      <input width="10vw" type="button" value="Показать врача в МП" onclick="generateDoctorDeeplink()" />
+    </form>
+    <hr>
+    <form>
+      <input width="5vw" type="number" id="specialityId_field" />
+      <input width="5vw" type="number" id="cityId_field" />
+      <input width="10vw" type="button" value="Показать список врачей" onclick="generateDoctorListDeeplink()" />
     </form>
 </body>
