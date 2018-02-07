@@ -1,5 +1,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+
+  function generateDoctorDeeplink() {
+    var id = document.getElementById("doctorId_field").value
+    window.location.href = "https://yavc.adj.st/doctor/id/" + id
+  }
+
+</script>
 <body>
     <h1 style="font-size:10vw;"> Тестовый домен </h1>
     <p style="font-size:5vw;"> <a href="https://skgwazap.github.io/doctor/Suchkova_Elena/id/28411">Сучкова Елена</a>
@@ -20,4 +28,9 @@
     <p style="font-size:5vw;"> <a href="https://yavc.adj.st">Bare Universal Link</a>
     <p style="font-size:5vw;"> <a href="https://yavc.adj.st/doctor/id/28411">Сучкова Елена</a>
     <p style="font-size:5vw;"> <a href="https://yavc.adj.st/doctorList/specialityId/77/cityId/1">Лор, Москва</a>
+    <hr>
+    <form>
+      <input width="20vw" type="number" id="doctorId_field" />
+      <input width="20vw" type="button" value="Показать врача в МП" onclick="generateDoctorDeeplink()" />
+    </form>
 </body>
