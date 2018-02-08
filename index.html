@@ -4,13 +4,13 @@
 
   function generateDoctorDeeplink() {
     var id = document.getElementById("doctorId_field").value
-    window.location.href = "https://yavc.adj.st/doctor/id/" + id
+    window.location.href = "https://app.adjust.com/v5tj8a?deep_link=docdocapp:/doctor/id/" + id
   }
 
   function generateDoctorListDeeplink() {
     var specialityId = document.getElementById("specialityId_field").value
     var cityId = document.getElementById("cityId_field").value
-    window.location.href = "https://yavc.adj.st/doctorList/specialityId/" + specialityId + "/cityId/" + cityId
+    window.location.href = "https://app.adjust.com/v5tj8a?deep_link=docdocapp:/doctorList/specialityId/" + specialityId + "/cityId/" + cityId
   }
 
 </script>
