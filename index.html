@@ -36,13 +36,13 @@
     <p style="font-size:5vw;"> <a href="https://yavc.adj.st/doctorList/specialityId/77/cityId/1">Лор, Москва</a>
     <hr>
     <form>
-      <input size="5" type="number" id="doctorId_field" />
+      <input maxlength="5" type="number" id="doctorId_field" />
       <input type="button" value="Показать врача в МП" onclick="generateDoctorDeeplink()" />
     </form>
     <hr>
     <form>
-      <input size="5" type="number" id="specialityId_field" />
-      <input size="5" type="number" id="cityId_field" />
+      <input maxlength="2" type="number" id="specialityId_field" />
+      <input maxlength="2" type="number" id="cityId_field" />
       <input type="button" value="Показать список врачей" onclick="generateDoctorListDeeplink()" />
     </form>
 </body>
