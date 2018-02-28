@@ -8,9 +8,16 @@
   }
 
   function generateDoctorListDeeplink() {
+    var path = "https://app.adjust.com/v5tj8a?deep_link=docdocapp://doctorList"
     var specialityId = document.getElementById("specialityId_field").value
+    if (specialityId) {
+      path += "/specialityId/" + specialityId
+    }
     var cityId = document.getElementById("cityId_field").value
-    window.location.href = "https://app.adjust.com/v5tj8a?deep_link=docdocapp://doctorList/specialityId/" + specialityId + "/cityId/" + cityId
+    if (cityId) {
+      path += "/cityId/" + cityId
+    }
+    window.location.href = path
   }
 
 </script>
